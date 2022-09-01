@@ -46,8 +46,6 @@
 
 
     
-        <link rel="stylesheet" type="text/css" href="/css/reward.css">
-    
 
 
 
@@ -335,7 +333,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>位于提瓦特大陆的北边。蒙德是提瓦特大陆七国中的一个城邦。蒙德城四面被果酒湖包围，只有一座石桥与外界连接，在城市的最深处是一座宏伟的大教堂，名为”西风大教堂”，教堂外的广场上竖立着风神巴巴托斯的雕像。</p>
-<p>游戏中，蒙德地区共有5座七天神像，并有附加地区龙脊雪山。<br>蒙德曾处于高塔孤王的残暴统治时期，由小精灵、少年、红发骑士、猎人少女组成的四人小队推翻了高塔孤王，建立了蒙德城，后来蒙德进入了贵族统治的时期，劳伦斯家族的暴政遭到人们的反抗，在温妮莎等人的抗争下，从此蒙德再无贵族，现由西风骑士团担任管理的职责。<br>数千年前蒙德曾由“尘世七执政”中的“风神巴巴托斯”管理，风神信仰自由，不去统治，也只在蒙德由旧贵族统治的腐败时期进行协助。当今的管理者是“西风骑士团”<img src="https://upload-bbs.mihoyo.com/upload/2019/10/20/4885809/457a81acaed5433b1c93420dfeb1174a_163540248291395274.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="百度图片--Lena"></p>
+<p>游戏中，蒙德地区共有5座七天神像，并有附加地区龙脊雪山。<br>蒙德曾处于高塔孤王的残暴统治时期，由小精灵、少年、红发骑士、猎人少女组成的四人小队推翻了高塔孤王，建立了蒙德城，后来蒙德进入了贵族统治的时期，劳伦斯家族的暴政遭到人们的反抗，在温妮莎等人的抗争下，从此蒙德再无贵族，现由西风骑士团担任管理的职责。<img src="https://upload-bbs.mihoyo.com/upload/2020/12/24/159853836/fd4a3fcf22eb2824609024462be02eec_639884495258749034.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="骑士团"><br>数千年前蒙德曾由“尘世七执政”中的“风神巴巴托斯”管理，风神信仰自由，不去统治，也只在蒙德由旧贵族统治的腐败时期进行协助。当今的管理者是“西风骑士团”<img src="https://upload-bbs.mihoyo.com/upload/2019/10/20/4885809/457a81acaed5433b1c93420dfeb1174a_163540248291395274.jpg?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,jpg" alt="百度图片--Lena"></p>
 <p>在原神维基中蒙德的历史非常悠久（在知乎中人还有人写成蒙德史）</p>
 
                 
@@ -419,39 +417,6 @@
 
                 </div>
             </div>
-            
-                <div id="reward">
-    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs row">
-                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
-                    </ul>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('.tabs').tabs();
-    });
-</script>
-
             
         </div>
     </div>
@@ -992,6 +957,14 @@ $(function () {
     
 
     <!-- 鼠标星星特效 -->
+     
+        <script type="text/javascript">
+            // 只在桌面版网页启用特效
+            var windowWidth = $(window).width();
+            if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/libs/others/star.js"><\/script>');
+            }
+        </script>
     
 
      
